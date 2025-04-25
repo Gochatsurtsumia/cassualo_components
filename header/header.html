@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="cassualo-logo">
+        <nav>
+          <a href="index.html">
+            <img src="/photos/Vector.png" alt="" />
+            Cassualo</a
+          >
+        </nav>
+      </div>
+      <div class="three-link">
+        <div class="menu-toggle" id="menuToggle">⋮</div>
+        <nav class="nav-elements" id="navElements">
+          <ul>
+            <li>
+              <a href="mission.html"> Mission </a>
+            </li>
+            <li>
+              <a href="articles.html">Articles</a>
+            </li>
+            <li>
+              <a href="Quizes.html">Quizes</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logos">
+        <img src="/photos/ic_baseline-facebook (1).svg" alt="facebook-logo" />
+        <img src="/photos/Vector (1).png" alt="instagram logo" />
+        <img src="/photos/Group.png" alt="tiktok logo" />
+      </div>
+    </header>
+  </body>
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("navElements");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+</html>
