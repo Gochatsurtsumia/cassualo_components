@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(255, 238, 218, 1);
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+textarea {
+  width: 500px;
+  height: 111px;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 2px 50px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+textarea:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 1);
+}
+textarea:disabled {
+  background-color: rgb(255, 255, 255);
+}
+textarea:read-only:not(:disabled) {
+  background-color: rgba(241, 242, 243, 1);
+}
+.error-message {
+  color: red;
+  margin-right: 15%;
+  font-weight: 400;
+  font-size: 17px;
+  display: none;
+}
+.error {
+  border: 1px solid red;
+}
