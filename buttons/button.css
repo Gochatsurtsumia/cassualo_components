@@ -1,0 +1,33 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+.buttons button {
+  width: 116px;
+  height: 58px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+#first {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 65, 35, 1),
+    rgba(255, 135, 2, 1)
+  );
+  color: white;
+}
+#second {
+    border: 2px solid rgba(255, 65, 35, 1);
+    background-color: white;
+    color: rgba(255, 65, 35, 1);
+}
+#third{
+    background-color: white;
+    border: none;
+    color: rgba(255, 65, 35, 1);
+}
