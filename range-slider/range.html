@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="range.css" />
+  </head>
+  <body>
+    <form action="">
+      <input type="range" id="range" min="10" max="100" />
+      <div class="first-slide"><span>10</span> <span>100</span></div>
+      <input type="range" id="range2" min="10" max="100" disabled />
+      <div class="first-slide"><span>10</span> <span>100</span></div>
+      <div class="two-thumb">
+        <input type="range" id="min" value="0" min="10" max="100" />
+        <input type="range" id="max" value="100" min="10" max="100" />
+        <div class="first-slide" id="last-slide"><span>10</span> <span>100</span></div>
+      </div>
+    </form>
+  </body>
+  <script src="range.js"></script>
+</html>
