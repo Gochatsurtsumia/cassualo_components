@@ -1,0 +1,23 @@
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: red;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"]:hover:not(:disabled)::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 82, 82, 0.2);
+  border-radius: 50%;
+  accent-color:  rgba(255, 82, 82, 0.2);
+}
+
+input[type="radio"]:disabled {
+  cursor: not-allowed;
+}
