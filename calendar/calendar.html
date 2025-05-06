@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time & Calendar</title>
+    <link rel="stylesheet" href="calendar.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="dateTimeForm">
+        <div class="input-container">
+          <div class="input-wrapper">
+            <input type="time" id="timeInput" name="timeInput" value="12:30" />
+          </div>
+
+          <div class="input-wrapper">
+            <input
+              type="date"
+              id="dateInput"
+              name="dateInput"
+              value="2023-11-07"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const timeInput = document.getElementById("timeInput");
+        const dateInput = document.getElementById("dateInput");
+        const clearButton = document.getElementById("clearButton");
+
+        timeInput.value = "12:30";
+        dateInput.value = "2023-11-07";
+      });
+    </script>
+  </body>
+</html>
