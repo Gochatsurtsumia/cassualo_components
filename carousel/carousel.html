@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="carousel.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img id="second-photo" src="sea-to-sky-web.avif" alt="" />
+        <img id="first-photo" src="victoria-1444-x-700.avif" alt="" />
+      </div>
+      <div class="buttons">
+        <button id="left-arrow"><</button>
+        <button id="right-arrow">></button>
+      </div>
+      <div class="bottom-btns">
+        <button id="first-button"></button>
+        <button id="second-button"></button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const firstButton=document.getElementById("first-button");
+    const secondButton =document.getElementById("second-button");
+    const leftArrow =document.getElementById("left-arrow");
+    const rightArrow=document.getElementById("right-arrow");
+    const firstPhoto=document.getElementById("first-photo")
+    const secondPhoto= document.getElementById("second-photo")
+    firstButton.addEventListener("click",function(){
+        firstPhoto.style.display="block";
+        secondPhoto.style.display="none";
+        firstButton.style.backgroundColor="grey";
+        secondButton.style.backgroundColor="white";
+    })
+    secondButton.addEventListener("click",function(){
+        firstPhoto.style.display="none";
+        secondPhoto.style.display="block";
+        firstButton.style.backgroundColor="white";
+        secondButton.style.backgroundColor="grey";
+    })
+    leftArrow.addEventListener("click",function(){
+        firstPhoto.style.display="block";
+        secondPhoto.style.display="none";
+        firstButton.style.backgroundColor="grey";
+        secondButton.style.backgroundColor="white";
+    })
+    rightArrow.addEventListener("click",function(){
+        firstPhoto.style.display="none";
+        secondPhoto.style.display="block";
+        firstButton.style.backgroundColor="white";
+        secondButton.style.backgroundColor="grey";
+    })
+    
+
+  </script>
+</html>

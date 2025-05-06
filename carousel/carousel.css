@@ -1,0 +1,48 @@
+img {
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img {
+  position: relative;
+}
+.buttons {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  display: flex;
+  width: 85%;
+  align-items: center;
+  z-index: 1;
+}
+.buttons button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 80px;
+  cursor: pointer;
+}
+.bottom-btns {
+  position: absolute;
+  left: 50%;
+  top: 86%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  gap: 10px;
+}
+.bottom-btns button {
+  padding: 10px;
+  color: red;
+  background-color: white(188, 180, 180);
+  border-radius: 50%;
+}
+#second-photo {
+  display: none;
+}
