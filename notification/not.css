@@ -1,36 +1,54 @@
 .notification {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: black;
-    padding: 16px 20px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: inset 0px 10px 30px rgba(255, 0, 0, 0.15); /* Inner shadow */
-    z-index: 1000;
-    opacity: 0; /* Initially hidden */
-    visibility: hidden; /* Initially hidden */
-    background-color: rgba(255, 0, 0, 0.15); /* The background with the rgba color */
-    transition: opacity 0.5s ease, visibility 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
-  }
-  
-  .notification.show {
-    opacity: 1; /* Fade in */
-    visibility: visible; /* Make visible */
-  }
-  
-  .notification button {
-    color: black;
-    border: none;
-    padding: 6px 12px;
-    margin-left: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: transparent;
-    margin-bottom: 60px;
-    font-size: 40px;
-  }
-  
+    gap: 20px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  padding: 16px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: inset 0px 10px 30px rgba(255, 0, 0, 0.15); /* Inner shadow */
+  z-index: 1000;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.15
+  ); /* The background with the rgba color */
+  transition: opacity 0.5s ease, visibility 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+}
+.img {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img{
+    width: 50%;
+    height: 50%;
+}
+
+.notification.show {
+  opacity: 1; /* Fade in */
+  visibility: visible; /* Make visible */
+}
+
+.notification button {
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 60px;
+  font-size: 40px;
+}
