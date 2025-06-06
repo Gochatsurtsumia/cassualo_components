@@ -1,40 +1,31 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-color: rgba(255, 238, 218, 1);
-}
-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  flex-direction: column;
-  gap: 20px;
-}
+
 textarea {
   width: 500px;
   height: 111px;
   border-radius: 10px;
-  border-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 15px 2px 50px 20px;
   font-size: 20px;
   font-weight: 600;
   overflow-x: auto;
   white-space: pre-wrap;
+  resize: none;
 }
+
 textarea:focus {
   outline: none;
   border-color: rgba(0, 0, 0, 1);
 }
+
 textarea:disabled {
   background-color: rgb(255, 255, 255);
+  cursor: not-allowed;
 }
+
 textarea:read-only:not(:disabled) {
   background-color: rgba(241, 242, 243, 1);
 }
+
 .error-message {
   color: red;
   margin-right: 15%;
@@ -42,6 +33,12 @@ textarea:read-only:not(:disabled) {
   font-size: 17px;
   display: none;
 }
-.error {
+
+textarea.error {
   border: 1px solid red;
+}
+
+/* Show error message when textarea has .error */
+textarea.error + .error-message {
+  display: block;
 }

@@ -5,6 +5,10 @@ import DateTimePicker from "./components/DateTimePicker.jsx";
 import ButtonGroup from "./components/ButtonGroup.jsx";
 import CheckboxGroup from "./components/CheckboxGroup.jsx"; // NEW
 import Dropdown from "./components/Dropdown.jsx";
+import RadioButtons from "./components/RadioButtons.jsx";
+import TextareaForm from "./components/TextareaForm.jsx";
+import ProgressBar from "./components/ProgressBar.jsx";
+import Tags from "./components/Tags.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -54,13 +58,16 @@ class App extends React.Component {
         />
         <h1>Select Date & Time</h1>
         <DateTimePicker />
-
         <h1>Buttons</h1>
         <ButtonGroup />
-
         <h1>Checkboxes</h1>
         <CheckboxGroup />
-        <Dropdown/>
+        <Dropdown />
+        <RadioButtons />
+        <TextareaForm />
+        <ProgressBar indeterminate={false} />
+        <ProgressBar indeterminate={true} />
+        <Tags />
       </>
     );
   }
