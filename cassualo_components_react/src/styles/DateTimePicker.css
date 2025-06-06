@@ -1,5 +1,5 @@
 * {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -21,32 +21,27 @@ h1 {
   width: 250px;
 }
 
-input[type="time"] {
+input[type="time"],
+input[type="date"] {
   width: 100%;
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid #ddd;
   font-size: 16px;
   background-color: white;
   cursor: pointer;
   color: #333;
 }
 
+input[type="time"] {
+  border: 1px solid #ddd;
+}
+
 input[type="date"] {
-  width: 100%;
-  padding: 15px;
-  border-radius: 10px;
   border: 2px solid rgb(219, 214, 214);
-  font-size: 16px;
-  background-color: white;
-  cursor: pointer;
-  color: #333;
 }
 
 input[type="time"]::-webkit-calendar-picker-indicator,
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0.8;
   cursor: pointer;
-  
 }
-

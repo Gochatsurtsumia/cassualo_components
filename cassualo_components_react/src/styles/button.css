@@ -1,6 +1,12 @@
 * {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
 .buttons button {
   width: 116px;
   height: 58px;
@@ -9,10 +15,7 @@
   font-size: 20px;
   line-height: 100%;
 }
-.buttons {
-  display: flex;
-  gap: 20px;
-}
+
 #first {
   background: linear-gradient(
     to bottom,
@@ -21,13 +24,15 @@
   );
   color: white;
 }
+
 #second {
-    border: 2px solid rgba(255, 65, 35, 1);
-    background-color: white;
-    color: rgba(255, 65, 35, 1);
+  border: 2px solid rgba(255, 65, 35, 1);
+  background-color: white;
+  color: rgba(255, 65, 35, 1);
 }
-#third{
-    background-color: white;
-    border: none;
-    color: rgba(255, 65, 35, 1);
+
+#third {
+  background-color: white;
+  border: none;
+  color: rgba(255, 65, 35, 1);
 }

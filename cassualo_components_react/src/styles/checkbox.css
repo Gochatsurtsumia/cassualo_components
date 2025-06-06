@@ -3,18 +3,22 @@ form {
   flex-direction: column;
   align-items: flex-start;
 }
+
 input {
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
+
 input[type="checkbox"]:not(:disabled):active {
   transform: scale(1.2);
   transition: transform 0.2s ease-in-out;
 }
+
 input[type="checkbox"]:checked {
   accent-color: red;
 }
+
 input[type="checkbox"]:disabled {
   cursor: not-allowed;
 }
