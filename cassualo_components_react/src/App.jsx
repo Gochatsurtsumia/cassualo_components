@@ -9,6 +9,9 @@ import RadioButtons from "./components/RadioButtons.jsx";
 import TextareaForm from "./components/TextareaForm.jsx";
 import ProgressBar from "./components/ProgressBar.jsx";
 import Tags from "./components/Tags.jsx";
+import SwitchToggle from "./components/SwitchToggle.jsx";
+import FileUpload from "./components/FileUpload.jsx";
+import Carousel from "./components/Carousel.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -68,6 +71,9 @@ class App extends React.Component {
         <ProgressBar indeterminate={false} />
         <ProgressBar indeterminate={true} />
         <Tags />
+        <SwitchToggle />
+        <FileUpload />
+        <Carousel/>
       </>
     );
   }

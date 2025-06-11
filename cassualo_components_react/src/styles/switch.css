@@ -2,16 +2,17 @@
   background-color: rgba(255, 238, 218, 1);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .switch {
   position: relative;
   display: flex;
   width: 50px;
   height: 28px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .switch input {
@@ -20,40 +21,7 @@ form {
   height: 0;
 }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: background-color 0.4s;
-  border-radius: 34px;
-}
-
-.slider::before {
-  content: "";
-  position: absolute;
-  height: 22px;
-  width: 22px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  transition: transform 0.4s;
-  border-radius: 50%;
-}
-.slider:hover {
-  border: 1px solid white;
-}
-
-input:checked + .slider {
-  background-color: red;
-}
-
-input:checked + .slider::before {
-  transform: translateX(22px);
-}
+.slider,
 .slider-disabled {
   position: absolute;
   cursor: pointer;
@@ -65,6 +33,8 @@ input:checked + .slider::before {
   transition: background-color 0.4s;
   border-radius: 34px;
 }
+
+.slider::before,
 .slider-disabled::before {
   content: "";
   position: absolute;
@@ -72,10 +42,24 @@ input:checked + .slider::before {
   width: 22px;
   left: 3px;
   bottom: 3px;
-  background-color: grey;
+  background-color: white;
   transition: transform 0.4s;
   border-radius: 50%;
 }
+
+.slider:hover {
+  border: 1px solid white;
+}
 .slider-disabled:hover {
   border: 1px solid red;
+}
+.slider-disabled::before {
+  background-color: grey;
+}
+
+input:checked + .slider {
+  background-color: red;
+}
+input:checked + .slider::before {
+  transform: translateX(22px);
 }
